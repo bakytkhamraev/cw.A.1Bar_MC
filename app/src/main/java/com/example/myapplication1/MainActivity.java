@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        textView=findViewById(R.id.one_tv);
+        setContentView(R.layout.manchester_city);
+     //   textView=findViewById(R.id.one_tv);
 
     }
 
@@ -37,5 +37,30 @@ public class MainActivity extends AppCompatActivity {
             textView.setText("Ещё раз напишите пароль");
         }
         one=!one;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("xexe","onPause");
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("xexe","onResume");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("xexe","onStop");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("xexe","onStart");
     }
 }
